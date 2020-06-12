@@ -109,16 +109,16 @@ console.log(getLastReview(reviews));
     {name:"Lauren", rating: 4, feedback: "Absolutely love that they have karaoke Fridays! Food and drink selection is okay."}]
 */
 
- /*function getReviewByRating(arr, rating) {
+function getReviewByRating(array, number) {
   const ratingsArray = []
-  for(let i = 0; i < arrays.length; i++){
-    if (arrays[i].rating >= Math.floor(number)) {
-      ratingsArray.push(arrays[i]);
+  for(let i = 0; i < array.length; i++){
+    if (Math.floor(array[i].rating) === number) {
+      ratingsArray.push(reviews[i]);
     } 
   }
   console.log(ratingsArray);
-  }
-console.log(getLastReview(reviews, 4));*/
+ }
+console.log(getLastReview(reviews, 4));
   
 /** STRETCH 2: Write a function called 'getLongestReview' that returns an array containing all reviews longer than 15 words. 
   
